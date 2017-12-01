@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Items</title>
+        <link rel="stylesheet" href="file:///D:/University/Projects/MVC/task-solution/web/static/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="file:///D:/University/Projects/MVC/task-solution/web/static/css/items.css"/>
+    <body>
+        <br/>
+        <div class="container">
+            <form method="get">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="form-group">
+                            <select name="status"  class="form-control" required>
+                                <optgroup label="Status">
+                                    <option value="" disabled hidden selected>Status</option>
+                                    <option>All</option>
+                                    <option>New</option>
+                                    <option>Solved</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-sm-8">
+                        <div class="form-group">
+                            <input name="name" type="text" class="form-control" placeholder="Search">
+                        </div>
+                    </div>
+                    <div class="col-sm-2">
+                        <button type="submit" class="btn btn-default">Search</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="btn btn-success" href="/items/add">Add Issue</a>
+                </div>
+            </form>
+            <div class="row">
+                <table class="table table-hover">
+                    <thead>
+                        <tr>
+
+                            <th>Name</th>
+                            <th>Type</th>
+                            <th>Quantity</th>
+                            <th>Single Price</th>
+
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+
+                            <td>
+                                <a href="/" class="btn mini btn-primary">Edit</a>
+                            </td>
+                            <td>
+                                <a href="/" class="confirm-delete mini btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <a href="/" class="btn mini btn-primary">Edit</a>
+                            </td>
+                            <td>
+                                <a href="/" class="confirm-delete mini btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                        <tr>
+
+                            <td>
+                                <a href="/" class="btn mini btn-primary">Edit</a>
+                            </td>
+                            <td>
+                                <a href="/" class="confirm-delete mini btn btn-danger">Delete</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <script  src="D:/University/Projects/MVC/task-solution\web\static\jquery\jquery.min.js"></script>
+        <script  src="D:/University/Projects/MVC/task-solution\web\static\bootstrap\js\bootstrap.min.js"></script>
+        <script>
+            $("#items").addClass("active");
+        </script>
+    </body>
+</html>
